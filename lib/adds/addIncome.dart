@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wallnut_money_manager/services/database.dart';
 
 class AddIncome extends StatefulWidget {
   @override
@@ -6,7 +7,10 @@ class AddIncome extends StatefulWidget {
 }
 
 class _AddIncomeState extends State<AddIncome> {
-  String _category;
+  TextEditingController _incomecontroller, _descontroller;
+  final DatabaseService db = DatabaseService();
+  String _category, description, type = 'Income';
+  double income;
   List<String> _categoryvalues = [
     'Allowance',
     'Stipend',
@@ -14,6 +18,13 @@ class _AddIncomeState extends State<AddIncome> {
     'Bonus',
     'Others'
   ];
+
+  @override
+  void initState() {
+    super.initState();
+    _incomecontroller = new TextEditingController();
+    _descontroller = new TextEditingController();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -36,10 +47,10 @@ class _AddIncomeState extends State<AddIncome> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           SizedBox(
-                            height: 70.0,
+                            height: 80.0,
                           ),
                           Padding(
-                            padding: EdgeInsets.all(15),
+                            padding: EdgeInsets.all(20),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
@@ -54,7 +65,7 @@ class _AddIncomeState extends State<AddIncome> {
                                 Row(
                                   children: <Widget>[
                                     Text(
-                                      "Harder to get,Easy to spend,\nSo it is great day for you as you earned.",
+                                      "Save your Money",
                                       style: TextStyle(
                                           color: Colors.white, fontSize: 18),
                                     ),
@@ -100,6 +111,8 @@ class _AddIncomeState extends State<AddIncome> {
                                                       CrossAxisAlignment.start,
                                                   children: <Widget>[
                                                     TextFormField(
+                                                      controller:
+                                                          _incomecontroller,
                                                       keyboardType:
                                                           TextInputType.number,
                                                       decoration:
@@ -118,6 +131,8 @@ class _AddIncomeState extends State<AddIncome> {
                                                     ),
                                                     SizedBox(height: 15),
                                                     TextFormField(
+                                                      controller:
+                                                          _descontroller,
                                                       decoration:
                                                           InputDecoration(
                                                         hintText: 'Description',
@@ -186,9 +201,9 @@ class _AddIncomeState extends State<AddIncome> {
                                                                       .w600,
                                                             )),
                                                         onPressed: () {
+                                                          saveData();
                                                           Navigator.pop(
                                                               context);
-                                                          //save here
                                                         },
                                                         color: Colors.grey[900],
                                                       ),
@@ -220,5 +235,18 @@ class _AddIncomeState extends State<AddIncome> {
             },
           ),
         ));
+  }
+
+  void saveData() {
+    income = double.parse(_incomecontroller.text);
+    if (_descontroller.text == "") {
+      description = "No Description added";
+    } else {
+      description = _descontroller.text;
+    }
+    if (_category == null) {
+      _category = "No category selected";
+    }
+    db.updateTransactionuser(type, income, description, _category);
   }
 }
