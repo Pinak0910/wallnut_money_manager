@@ -50,7 +50,7 @@ class _MainDrawerState extends State<MainDrawer> {
                   Text(
                     'Logged using',
                     style: TextStyle(
-                        fontFamily: 'GrenzeGotisch',
+//                         fontFamily: 'GrenzeGotisch',
                         fontSize: 20,
                         color: Colors.white),
                   ),
@@ -60,7 +60,7 @@ class _MainDrawerState extends State<MainDrawer> {
                   Text(
                     user.email,
                     style: TextStyle(
-                        fontFamily: 'GrenzeGotisch',
+//                         fontFamily: 'GrenzeGotisch',
                         fontSize: 15,
                         color: Colors.white),
                   ),
@@ -78,7 +78,7 @@ class _MainDrawerState extends State<MainDrawer> {
               title: Text(
                 'Profile',
                 style: TextStyle(
-                  fontFamily: 'GrenzeGotisch',
+//                   fontFamily: 'GrenzeGotisch',
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
                   color: Colors.black,
@@ -100,7 +100,8 @@ class _MainDrawerState extends State<MainDrawer> {
                         Text(
                           "Profile",
                           style: TextStyle(
-                              fontFamily: 'GrenzeGotisch', color: Colors.black),
+//                               fontFamily: 'GrenzeGotisch',
+                                 color: Colors.black),
                         ),
                         SizedBox(
                           height: 4,
@@ -122,7 +123,8 @@ class _MainDrawerState extends State<MainDrawer> {
                               Text(
                                 'Username : ${data['name']}',
                                 style: TextStyle(
-                                    fontFamily: 'GrenzeGotisch', fontSize: 15),
+//                                     fontFamily: 'GrenzeGotisch',
+                                  fontSize: 15),
                               ),
                             ],
                           ),
@@ -134,7 +136,8 @@ class _MainDrawerState extends State<MainDrawer> {
                               Text(
                                 'Email : ${data['email']}',
                                 style: TextStyle(
-                                    fontFamily: 'GrenzeGotisch', fontSize: 15),
+//                                     fontFamily: 'GrenzeGotisch',
+                                  fontSize: 15),
                               ),
                             ],
                           ),
@@ -149,7 +152,8 @@ class _MainDrawerState extends State<MainDrawer> {
                               Text(
                                 'Balance : ${data['grand_balance']}',
                                 style: TextStyle(
-                                    fontFamily: 'GrenzeGotisch', fontSize: 15),
+//                                     fontFamily: 'GrenzeGotisch',
+                                  fontSize: 15),
                               ),
                             ],
                           ),
@@ -161,7 +165,8 @@ class _MainDrawerState extends State<MainDrawer> {
                               Text(
                                 'Income : ${data['grand_income']}',
                                 style: TextStyle(
-                                    fontFamily: 'GrenzeGotisch', fontSize: 15),
+//                                     fontFamily: 'GrenzeGotisch',
+                                  fontSize: 15),
                               ),
                             ],
                           ),
@@ -173,7 +178,8 @@ class _MainDrawerState extends State<MainDrawer> {
                               Text(
                                 'Expense : ${data['grand_expense']}',
                                 style: TextStyle(
-                                    fontFamily: 'GrenzeGotisch', fontSize: 15),
+//                                     fontFamily: 'GrenzeGotisch',
+                                  fontSize: 15),
                               ),
                             ],
                           ),
@@ -207,7 +213,7 @@ class _MainDrawerState extends State<MainDrawer> {
                 'Clear data',
                 style: TextStyle(
                   fontSize: 18.0,
-                  fontFamily: 'GrenzeGotisch',
+//                   fontFamily: 'GrenzeGotisch',
                 ),
               ),
               onTap: () {
@@ -262,7 +268,9 @@ class _MainDrawerState extends State<MainDrawer> {
               leading: Icon(Icons.contact_mail, color: Colors.black),
               title: Text(
                 "About Us",
-                style: TextStyle(fontFamily: 'GrenzeGotisch', fontSize: 18.0),
+                 style: TextStyle(
+//                    fontFamily: 'GrenzeGotisch',
+                   fontSize: 18.0),
               ),
               onTap: () {
                 Navigator.pop(context);
@@ -277,7 +285,7 @@ class _MainDrawerState extends State<MainDrawer> {
                             "About us",
                             style: TextStyle(
                                 color: Colors.black,
-                                fontFamily: 'GrenzeGotisch',
+//                                 fontFamily: 'GrenzeGotisch',
                                 fontWeight: FontWeight.bold),
                           ),
                           content: Container(
@@ -289,7 +297,7 @@ class _MainDrawerState extends State<MainDrawer> {
                                   Text("Developed by Team Wallnut",
                                       textAlign: TextAlign.left,
                                       style: TextStyle(
-                                          fontFamily: 'GrenzeGotisch',
+//                                           fontFamily: 'GrenzeGotisch',
                                           fontWeight: FontWeight.w600))
                                 ]),
                                 SizedBox(
@@ -350,7 +358,7 @@ class _MainDrawerState extends State<MainDrawer> {
               title: Text(
                 'Log out',
                 style: TextStyle(
-                  fontFamily: 'GrenzeGotisch',
+//                   fontFamily: 'GrenzeGotisch',
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
                 ),
@@ -370,7 +378,7 @@ class _MainDrawerState extends State<MainDrawer> {
                                 child: Text(
                                   'Yes',
                                   style: TextStyle(
-                                    fontFamily: 'GrenzeGotisch',
+//                                     fontFamily: 'GrenzeGotisch',
                                   ),
                                 )),
                             FlatButton(
@@ -380,7 +388,7 @@ class _MainDrawerState extends State<MainDrawer> {
                                 child: Text(
                                   'No',
                                   style: TextStyle(
-                                    fontFamily: 'GrenzeGotisch',
+//                                     fontFamily: 'GrenzeGotisch',
                                   ),
                                 ))
                           ],
