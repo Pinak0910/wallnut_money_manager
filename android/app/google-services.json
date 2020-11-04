@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "623851892226",
+    "firebase_url": "https://wallnut-money-manager.firebaseio.com",
+    "project_id": "wallnut-money-manager",
+    "storage_bucket": "wallnut-money-manager.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623851892226:android:0edae04982081fd3d2411b",
+        "android_client_info": {
+          "package_name": "com.example.wallnut_money_manager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "623851892226-3jlinbad4aan1qh7426rdibgp2fg8n3m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyHzHt2pudJnHBnvBvxHNISkTZ8kZ_Cwg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "623851892226-3jlinbad4aan1qh7426rdibgp2fg8n3m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
