@@ -37,7 +37,7 @@ class _TotalsscState extends State<Totalssc> {
                                 "Total Income",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
-                                    fontFamily: 'GrenzeGotisch',
+//                                     fontFamily: 'GrenzeGotisch',
                                     fontSize: 15.0,
                                     fontWeight: FontWeight.bold),
                               ),
@@ -47,7 +47,7 @@ class _TotalsscState extends State<Totalssc> {
                               Text(
                                 '${totaldata.grandIncome}',
                                 style: TextStyle(
-                                    fontFamily: 'GrenzeGotisch',
+//                                     fontFamily: 'GrenzeGotisch',
                                     fontWeight: FontWeight.w700,
                                     fontSize: 15.0),
                               ),
@@ -71,7 +71,7 @@ class _TotalsscState extends State<Totalssc> {
                                 "Total Expense",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
-                                    fontFamily: 'GrenzeGotisch',
+//                                     fontFamily: 'GrenzeGotisch',
                                     fontSize: 15.0,
                                     fontWeight: FontWeight.bold),
                               ),
@@ -81,7 +81,7 @@ class _TotalsscState extends State<Totalssc> {
                               Text(
                                 '${totaldata.grandExpense}',
                                 style: TextStyle(
-                                    fontFamily: 'GrenzeGotisch',
+//                                     fontFamily: 'GrenzeGotisch',
                                     fontWeight: FontWeight.w700,
                                     fontSize: 15.0),
                               ),
@@ -105,7 +105,7 @@ class _TotalsscState extends State<Totalssc> {
                                 "Total Balance",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
-                                    fontFamily: 'GrenzeGotisch',
+//                                     fontFamily: 'GrenzeGotisch',
                                     fontSize: 15.0,
                                     fontWeight: FontWeight.bold),
                               ),
@@ -115,7 +115,7 @@ class _TotalsscState extends State<Totalssc> {
                               Text(
                                 '${totaldata.grandBalance}',
                                 style: TextStyle(
-                                    fontFamily: 'GrenzeGotisch',
+//                                     fontFamily: 'GrenzeGotisch',
                                     fontWeight: FontWeight.w700,
                                     fontSize: 15.0),
                               ),
