@@ -32,7 +32,7 @@ class App extends StatelessWidget {
         }
 
         // Otherwise, show something whilst waiting for initialization to complete
-        return First();
+       return new Directionality( textDirection: TextDirection.ltr, child: Loading());
       },
     );
   }
