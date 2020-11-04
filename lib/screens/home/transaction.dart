@@ -73,7 +73,7 @@ class _TransactionsState extends State<Transactions> {
                               child: Text(
                                 transactions[i].data()['Type'],
                                 style: TextStyle(
-                                    fontFamily: 'GrenzeGotisch',
+//                                     fontFamily: 'GrenzeGotisch',
                                     fontWeight: FontWeight.w600,
                                     color: (transactions[i].data()['Type'] ==
                                             'Income'
@@ -91,7 +91,7 @@ class _TransactionsState extends State<Transactions> {
                                 'Date : ${transactions[i].data()['Date'].toString().substring(0, 10)}',
                                 textAlign: TextAlign.left,
                                 style: TextStyle(
-                                  fontFamily: 'GrenzeGotisch',
+//                                   fontFamily: 'GrenzeGotisch',
                                   color: (transactions[i].data()['Type'] ==
                                           'Income'
                                       ? Colors.black
@@ -105,7 +105,7 @@ class _TransactionsState extends State<Transactions> {
                               child: Text(
                                 'Amount : ${transactions[i].data()['Amount'].toString()}',
                                 style: TextStyle(
-                                    fontFamily: 'GrenzeGotisch',
+//                                     fontFamily: 'GrenzeGotisch',
                                     color: (transactions[i].data()['Type'] ==
                                             'Income'
                                         ? Colors.black
@@ -118,7 +118,7 @@ class _TransactionsState extends State<Transactions> {
                               child: Text(
                                 'Description : ${transactions[i].data()['Description']}',
                                 style: TextStyle(
-                                    fontFamily: 'GrenzeGotisch',
+//                                     fontFamily: 'GrenzeGotisch',
                                     color: (transactions[i].data()['Type'] ==
                                             'Income'
                                         ? Colors.black
@@ -131,7 +131,7 @@ class _TransactionsState extends State<Transactions> {
                               child: Text(
                                 'Category : ${transactions[i].data()['Category']}',
                                 style: TextStyle(
-                                    fontFamily: 'GrenzeGotisch',
+//                                     fontFamily: 'GrenzeGotisch',
                                     color: (transactions[i].data()['Type'] ==
                                             'Income'
                                         ? Colors.black
