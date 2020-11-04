@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
         title: Text(
           'Home',
           style: TextStyle(
-            fontFamily: 'GrenzeGotisch',
+//             fontFamily: 'GrenzeGotisch',
             color: Colors.white,
             fontSize: 18.0,
           ),
@@ -57,7 +57,8 @@ class Home extends StatelessWidget {
                         child: new Text(
                       "ADD",
                       style: TextStyle(
-                          fontFamily: 'GrenzeGotisch', color: Colors.black),
+//                           fontFamily: 'GrenzeGotisch',
+                        color: Colors.black),
                     )),
                     content: Container(
                       height: 90.0,
@@ -88,7 +89,7 @@ class Home extends StatelessWidget {
                                       label: Text(
                                         'Add Income',
                                         style: TextStyle(
-                                            fontFamily: 'GrenzeGotisch',
+//                                             fontFamily: 'GrenzeGotisch',
                                             color: Colors.grey[800],
                                             fontWeight: FontWeight.bold),
                                       )),
@@ -123,7 +124,7 @@ class Home extends StatelessWidget {
                                       label: Text(
                                         'Add Expense',
                                         style: TextStyle(
-                                            fontFamily: 'GrenzeGotisch',
+//                                             fontFamily: 'GrenzeGotisch',
                                             color: Colors.grey[100],
                                             fontWeight: FontWeight.bold),
                                       )),
